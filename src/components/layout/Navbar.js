@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import SignedInLink from './SignedInLinks';
 import SignedOutLink from './SignedOutLinks';
+import { connect } from 'react-redux'
 
 const NavBar = () => {
   return (
@@ -17,4 +18,6 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+
+
+export default connect()(NavBar);
