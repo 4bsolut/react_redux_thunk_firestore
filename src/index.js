@@ -18,6 +18,7 @@ const AuthIsLoaded = ({ children }) => {
 const rrfConfig = {
     userProfile: "users",
     useFirestoreForProfile: true,
+    resetBeforeLogin: false
   };
 const store = createStore(rootReducer, 
         applyMiddleware(thunk.withExtraArgument({getFirebase})),

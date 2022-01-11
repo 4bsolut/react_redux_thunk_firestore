@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { firestoreConnect } from 'react-redux-firebase';
 import { compose } from 'redux';
 const Dashboard = (state) => {
+  
   const { projects } = state
   return (
     <div className="dashboard container">
