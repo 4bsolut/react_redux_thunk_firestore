@@ -7,21 +7,22 @@ import SignIn from './components/auth/SignIn';
 import SignUp from './components/auth/SignUp';
 import CreateProject from './components/projects/CreateProject';
 import GuardedRoute from './guard/GuardedRoute';
+import InnerPagesRoutes from './guard/InnerPagesRoutes';
 import './style.css';
 
 export default function App() {
   return (
     <Router>
-      <div className="App">
-        <NavBar />
-        <Routes>
-          <Route exact path="/" element={<Dashboard />} />
-          <Route path="/project/:id" element={<ProjectDetails />} />
-          <Route path="/signin" element={<SignIn />} />
-          <Route path="/signup" element={<SignUp />} />
-          
-        </Routes>
-      </div>
+        <div className="App">
+          <NavBar />
+          <Routes>
+            <Route exact path="/" element={<GuardedRoute><Dashboard /></GuardedRoute>} />
+            <Route path="/project/:id" element={<GuardedRoute><ProjectDetails /></GuardedRoute>} />
+            <Route path="/signin" element={<InnerPagesRoutes><SignIn /></InnerPagesRoutes>} />
+            <Route path="/signup" element={<InnerPagesRoutes><SignUp /></InnerPagesRoutes>} />
+            <Route path="/create"   element={<GuardedRoute> <CreateProject /> </GuardedRoute>} />
+          </Routes>
+        </div>
     </Router>
   );
 }

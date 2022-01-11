@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.212287c7.css",
-    "main.js": "/static/js/main.ad034326.js",
+    "main.js": "/static/js/main.a1487767.js",
     "static/media/mario-bg.png": "/static/media/mario-bg.c9fe338ec386dcd39ce0.png",
     "index.html": "/index.html",
     "main.212287c7.css.map": "/static/css/main.212287c7.css.map",
-    "main.ad034326.js.map": "/static/js/main.ad034326.js.map"
+    "main.a1487767.js.map": "/static/js/main.a1487767.js.map"
   },
   "entrypoints": [
     "static/css/main.212287c7.css",
-    "static/js/main.ad034326.js"
+    "static/js/main.a1487767.js"
   ]
 }
