@@ -6,7 +6,6 @@ import { signIn } from '../../store/actions/authActions';
 
 const SignIn = ( {signIn, authError}) => {
   
- 
     let user = {
         email:'',
         password:''
